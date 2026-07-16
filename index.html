@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Patricia Martins — Promotora de Eventos & Recepcionista</title>
-
     <meta name="description" content="Portfólio profissional de Patricia Martins. Promotora de Eventos, Recepcionista e especialista em Ativações de Marca em Braga, Portugal.">
-
     <meta name="keywords" content="Patricia Martins, Promotora de Eventos, Recepcionista, Eventos, Ativações de Marca, Braga, Portugal">
-
     <meta name="author" content="Patricia Martins">
-
     <meta name="robots" content="index,follow">
-
+    <link rel="me" href="https://www.instagram.com/ptmartins_/">
+    <link rel="me" href="https://www.tiktok.com/@ptmartins">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Patricia Martins",
+      "url": "https://patriciamartins.pt",
+      "image": "https://patriciamartins.pt/favicon.ico",
+      "description": "Promotora de Eventos, Recepcionista e especialista em Ativações de Marca em Braga, Portugal.",
+      "areaServed": "Portugal",
+      "founder": {
+        "@type": "Person",
+        "name": "Patricia Martins"
+      },
+      "sameAs": [
+        "https://www.instagram.com/ptmartins_/",
+        "https://www.tiktok.com/@ptmartins"
+      ]
+    }
+    </script>
     <meta property="og:type" content="website">
     <meta property="og:title" content="Patricia Martins — Promotora de Eventos & Recepcionista">
     <meta property="og:description" content="Portfólio profissional de Patricia Martins.">
     <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c9cfa87e-6889-4d59-a2a8-3cb303dd0499/id-preview-e288470b--cc91da2d-c05d-49d2-a765-e61763b880f1.lovable.app-1784129942048.png">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Patricia Martins — Promotora de Eventos & Recepcionista">
     <meta name="twitter:description" content="Portfólio profissional de Patricia Martins.">
     <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c9cfa87e-6889-4d59-a2a8-3cb303dd0499/id-preview-e288470b--cc91da2d-c05d-49d2-a765-e61763b880f1.lovable.app-1784129942048.png">
-
-    <link rel="icon" href="favicon.ico">
-
+    <link rel="icon" href="/favicon.ico?">
     <style>
         html, body {
             margin: 0;
@@ -34,7 +46,6 @@
             overflow: hidden;
             background: #fff;
         }
-
         iframe {
             border: 0;
             width: 100%;
@@ -43,27 +54,22 @@
         }
     </style>
 </head>
-
 <body>
-
 <iframe
     id="site"
     src="https://patricia-martins.lovable.app/"
     loading="eager"
     allowfullscreen
 ></iframe>
-
 <script>
 const iframe = document.getElementById("site");
-
 iframe.addEventListener("load", () => {
     try {
         const doc = iframe.contentDocument || iframe.contentWindow.document;
-
         const badge = doc.getElementById("lovable-badge");
-
         if (badge) {
             badge.remove();
+            console.log('Removido.');
         }
     } catch (e) {
         console.warn(
@@ -72,6 +78,5 @@ iframe.addEventListener("load", () => {
     }
 });
 </script>
-
 </body>
 </html>
